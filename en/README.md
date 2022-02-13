@@ -1,6 +1,6 @@
 ---
 home: true
-title: home
+title: Home
 heroImage: /images/hero.png
 actions:
   - text: Get Started

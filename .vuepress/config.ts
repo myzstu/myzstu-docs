@@ -2,8 +2,6 @@ import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
 
 export default defineUserConfig<DefaultThemeOptions>({
-  dest: "docs",
-  base: "/docs",
   lang: 'zh-CN',
   title: 'MyZSTU',
   description: 'MyZSTU 文档',
@@ -23,7 +21,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   },
   themeConfig: {
     logo: '/images/logo.png',
-    repo: "shentuzhigang/MyZSTU",
+    repo: "myzstu/MyZSTU",
     editLinks: true,
     locales: {
       '/': {
@@ -41,7 +39,7 @@ export default defineUserConfig<DefaultThemeOptions>({
         selectLanguageName: 'English',
         nav: [
           {
-            text: "Guige",
+            text: "Guide",
             link: "/guide/"
           }
         ]
