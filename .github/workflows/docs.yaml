@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           # 选择要使用的 node 版本
           node-version: ${{ env.NODE_VERSION }}
@@ -41,14 +41,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-${{ env.NODE_VERSION }}-yarn-
             ${{ runner.os }}-node-
-      - name: cd dir
-        run: cd .vuepress
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: cd .vuepress && yarn --frozen-lockfile
 
       - name: Build documentation site
-        run: yarn build
+        run: cd .vuepress && yarn build
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2.2.0
