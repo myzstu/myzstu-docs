@@ -6,8 +6,8 @@ actions:
   - text: 快速开始 →
     link: /guide/getting-started.html
     type: primary
-  - text: 简单介绍
-    link: /guide/
+  - text: 指南
+    link: /introduce.html
     type: secondary
 footer: MIT Licensed | Copyright © 2021-present Starzkg
 ---
